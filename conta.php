@@ -15,11 +15,11 @@ class Conta {
 
     var float $quantia;
 
-    public function retirar($quantia) {
+    public function retirar($quantia): void {
         $this->saldo -= $quantia;
     }
 
-    public function depositar($quantia) {
+    public function depositar($quantia): void {
         $this->saldo += $quantia;
     }
 
