@@ -11,4 +11,19 @@ class Conta {
     var string $senha;
     var float $saldo;
     var bool $cancelada;
+
+
+    var float $quantia;
+
+    public function retirar($quantia) {
+        $this->saldo -= $quantia;
+    }
+
+    public function depositar($quantia) {
+        $this->saldo += $quantia;
+    }
+
+    public function obterSaldo(): float {
+        return $this->saldo;
+    }
 }
