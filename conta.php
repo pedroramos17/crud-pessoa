@@ -1,14 +1,14 @@
 <?php
-require_once "pessoa.php";
+
+require_once "model/pessoa.php";
+
 class Conta {
 
-    new Pessoa();
-
-    int $agencia;
-    string $codigo;
-    $dataDeCriacao;
-    $titular;
-    string $senha;
-    float $saldo;
-    boolean $cancelada;
+    var $agencia;
+    var string $codigo;
+    var DateTime $dataDeCriacao;
+    var Pessoa $titular;
+    var string $senha;
+    var float $saldo;
+    var bool $cancelada;
 }
