@@ -20,3 +20,20 @@ echo "A idade de Carlos é {$carlos->idade} <br>";
 $carlos->envelhecer(1);
 
 echo "Carlos agora tem {$carlos->idade} de idade <br>";
+
+$carlos_conta = new Conta(6671, "CC:11231243" , "2384092", $carlos, 1233, 23);
+
+echo "/n";
+
+echo "Manipulando a conta de {$carlos_conta->titular->nome}. /n";
+
+echo "O saldo atual é {$carlos_conta->obterSaldo()} /n";
+
+$carlos_conta->depositar(20);
+
+echo "O saldo agora é {$carlos_conta->obterSaldo()} /n";
+
+$carlos_conta->retirar(10);
+
+echo "O novo saldo é {$carlos_conta->obterSaldo()}";
+
