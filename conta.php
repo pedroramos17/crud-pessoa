@@ -6,7 +6,7 @@ class Conta {
 
     var $agencia;
     var string $codigo;
-    var DateTime $dataDeCriacao;
+    var $dataDeCriacao;
     var Pessoa $titular;
     var string $senha;
     var float $saldo;
@@ -47,6 +47,6 @@ class Conta {
     $this->depositar($saldo);
 }
 function __destruct() {
-    echo "A conta {$this->codigo} de {$this->titular} foi finalizada com sucesso!";
+    echo "A conta {$this->codigo} de {$this->titular->nome} foi finalizada com sucesso!";
 }
 }

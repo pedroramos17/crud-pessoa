@@ -21,7 +21,7 @@ $carlos->envelhecer(1);
 
 echo "Carlos agora tem {$carlos->idade} de idade.<br>";
 
-$carlos_conta = new Conta(6671, "CC:11231243" , "2384092", $carlos, 1233, 23);
+$carlos_conta = new Conta(6671, "11231243" , "2384092", $carlos, 1233, 23);
 
 echo "/n";
 
